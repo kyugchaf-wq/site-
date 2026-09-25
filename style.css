@@ -1,14 +1,15 @@
+.cont { 
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-right: 5%;
+}
 
-.cont{ 
-    margin-left: 5%;
-    margin-top: 2%;
-    margin-right: 5%;
+.contactos {
+  margin-left: 5%;
+  margin-top: 2%;
+  margin-right: 5%;
 }
-.contactos{
-    margin-left: 5%;
-    margin-top: 2%;
-    margin-right: 5%;
-}
+
 /* --- ESTILOS GENERALES Y FONDO AZUL MODERNO --- */
 body {
   /* Gradient azul oscuro profundo y elegante */
