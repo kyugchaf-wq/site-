@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - EMEXSIS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+    <ul class="nav nav-tabs bg-white ps-3 pt-2">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="cursos.html">Cursos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contactame.html">Contactos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="login.html">Iniciar sesión</a>
+        </li>
+    </ul>
+
+    <main class="login-container">
+        <section class="login-welcome">
+            <div class="login-welcome-content">
+                <p class="login-brand">EMEXSIS</p>
+                <h1>Bienvenido<br>de nuevo</h1>
+                <p class="login-description">
+                    Aprende, crea y encuentra soluciones tecnológicas con nosotros.
+                </p>
+                <div class="login-socials" aria-label="Redes sociales">
+                    <a href="contactame.html" aria-label="Contactos">f</a>
+                    <a href="contactame.html" aria-label="Instagram">◎</a>
+                    <a href="contactame.html" aria-label="TikTok">♪</a>
+                    <a href="contactame.html" aria-label="YouTube">▶</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="login-form-panel" aria-labelledby="login-title">
+            <form class="login-form" action="index.html" method="get">
+                <h2 id="login-title">Iniciar sesión</h2>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" autocomplete="current-password" minlength="6"
+                    required>
+
+                <div class="login-options">
+                    <label class="remember-option" for="remember">
+                        <input type="checkbox" id="remember" name="remember">
+                        <span>Recordarme</span>
+                    </label>
+                    <a href="contactame.html">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <button type="submit" class="login-submit">Iniciar sesión</button>
+
+                <p class="login-terms">
+                    Al iniciar sesión aceptas nuestros
+                    <a href="contactame.html">Términos de servicio</a> y
+                    <a href="contactame.html">Política de privacidad</a>.
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
