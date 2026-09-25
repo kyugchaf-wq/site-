@@ -4,3 +4,180 @@
     margin-top: 2%;
     margin-right: 5%;
 }
+.contactos{
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+/* --- ESTILOS GENERALES Y FONDO AZUL MODERNO --- */
+body {
+  /* Gradient azul oscuro profundo y elegante */
+  background: linear-gradient(135deg, #5998da 0%, #1b263b 50%, #2e4057 100%);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: #e0e1dd;
+}
+
+/* Espaciado del contenedor principal */
+.seccion-principal {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-top: 30px !important;
+}
+
+/* --- ESTILO BASE PARA TODAS LAS TARJETAS (Bordes Bonitos y Sombras) --- */
+.card, .caja-formulario {
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 20px !important; /* Bordes redondeados más suavizados */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important; /* Sombra flotante */
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por las tarjetas */
+.card:hover, .caja-formulario:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* --- COLUMNA 1: REDES SOCIALES --- */
+.columna-redes {
+  background-color: #ffffff !important;
+  overflow: hidden;
+}
+
+.columna-redes .card-header {
+  background-color: #f8f9fa !important;
+  border-bottom: 1px solid #e9ecef !important;
+  color: hsla(217, 57%, 76%, 0.701);
+  padding: 18px 20px;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.columna-redes .list-group-item {
+  border-bottom: 1px solid #f1f5f9 !important;
+  padding: 14px 20px;
+  font-weight: 500;
+  color: #334155;
+  transition: all 0.2s ease;
+}
+
+/* Animación bonita al pasar el cursor sobre cada red */
+.columna-redes .list-group-item:hover {
+  background-color: #f0f4f8 !important;
+  padding-left: 25px; /* Efecto de deslizamiento */
+}
+
+.icono-red {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+/* --- COLUMNA 2: FORMULARIO Y MAPA --- */
+.caja-formulario {
+  background: linear-gradient(145deg, #1e293b, #0f172a) !important;
+  padding: 25px;
+}
+
+.caja-formulario h3 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Inputs de texto rediseñados */
+.input-oscuro {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 12px 16px;
+  color: #ffffff;
+  outline: none;
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+/* Resplandor azul cuando haces clic para escribir */
+.input-oscuro:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #38bdf8;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+}
+
+.input-oscuro::placeholder {
+  color: #94a3b8;
+}
+
+/* Botón llamativo con degradado cyan/azul */
+.btn-enviar {
+  width: 100%;
+  background: linear-gradient(135deg, #0284c7, #38bdf8);
+  border: none;
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-enviar:hover {
+  opacity: 0.95;
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.5);
+  transform: scale(1.01);
+}
+
+/* Tarjeta del Mapa */
+.columna-centro .card {
+  background-color: #ffffff !important;
+}
+
+.columna-centro iframe {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* --- COLUMNA 3: TIKTOK / ANUNCIOS --- */
+.columna-derecha {
+  background-color: #ffffff !important;
+}
+
+.columna-derecha .card-title {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.columna-derecha .card-link {
+  color: #0284c7;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.columna-derecha .card-link:hover {
+  text-decoration: underline;
+}
+
+/* --- MENÚ SUPERIOR DE PESTAÑAS --- */
+.nav-tabs {
+  background-color: rgba(15, 23, 42, 0.8) !important;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.nav-tabs .nav-link {
+  color: #94a3b8 !important;
+  border: none !important;
+  font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+  color: #38bdf8 !important;
+  background-color: transparent !important;
+  border-bottom: 3px solid #38bdf8 !important;
+}
