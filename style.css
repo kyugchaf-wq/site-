@@ -43,6 +43,28 @@ body {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35) !important;
 }
 
+/* Tarjetas de servicios en Home */
+.cont .card {
+  background-color: #ffffff !important;
+  color: #334155;
+}
+
+.cont .card .card-title {
+  color: #0f172a;
+}
+
+.cont .card .card-text {
+  color: #475569;
+}
+
+.cont .card .card-body {
+  background-color: #ffffff;
+}
+
+.cont .card-group {
+  margin-bottom: 1.5rem;
+}
+
 /* --- COLUMNA 1: REDES SOCIALES --- */
 .columna-redes {
   background-color: #ffffff !important;
@@ -166,7 +188,7 @@ body {
 
 /* --- MENÚ SUPERIOR DE PESTAÑAS --- */
 .nav-tabs {
-  background-color: rgba(15, 23, 42, 0.8) !important;
+  background-color: rgb(251, 251, 252) !important;
   backdrop-filter: blur(8px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
@@ -175,10 +197,51 @@ body {
   color: #94a3b8 !important;
   border: none !important;
   font-weight: 500;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-tabs .nav-link:not(.active):not(.disabled):hover {
+  color: #0284c7 !important;
+  background-color: #f0f9ff !important;
 }
 
 .nav-tabs .nav-link.active {
   color: #38bdf8 !important;
   background-color: transparent !important;
   border-bottom: 3px solid #38bdf8 !important;
+}
+
+/* --- CURSOS --- */
+.course-card {
+  overflow: hidden;
+  background-color: #ffffff !important;
+  color: #334155;
+}
+
+.course-card .card-title {
+  color: #0f172a;
+}
+
+.course-card .card-text {
+  color: #475569;
+}
+
+.course-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #0284c7, #38bdf8);
+  border: none !important;
+  border-radius: 10px;
+  color: #ffffff !important;
+  font-weight: 600;
+  padding: 0.6rem 1.25rem;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.course-button:hover,
+.course-button:focus {
+  color: #ffffff !important;
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(2, 132, 199, 0.4);
 }
